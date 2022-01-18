@@ -1,0 +1,67 @@
+body { 
+    background: -webkit-canvas(lines); 
+    width:100%; 
+    /* no height needed as it is for the body */
+    background-color: #1b1b1eff;
+    margin: 0 0 0 0;
+    color: #fbfffeff;
+} 
+header{
+    /*background-color: #0c40db;*/
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar{
+    color: #fbfffeff;
+    transition: 0.3s;
+    background-color: #01a7c2ff;
+}
+.navbar-toggler-icon{
+    color: #fbfffeff;
+}
+.text-off-white{
+    color: #fbfffeff !important;
+}
+.dropdown-menu{
+    background-color: #01a7c2ff;
+    transition: ease-out 0.5s;
+}
+.dropdown-item:hover{
+    background-color: #1b1b1eff;
+}
+
+
+/* Boxes */
+
+.card{
+    margin: 10%;
+    box-shadow: 10px 10px 5px #6d676eff;
+    color: #1b1b1eff;
+}
+@media only screen and (max-width: 800px){
+    .card{
+        width: 100%;
+    }
+}
+.card-image{
+    max-width: 300px;
+    width: 100%;
+    margin: 10px auto;
+}
+.card-text{
+    color:#1b1b1eff;
+}
+
+.button-card{
+    background-color: #01a7c2ff;
+    border: none;
+    color:#fbfffeff;
+    transition: ease-out 0.5s;
+}
+.button-card:hover{
+    background-color: #1b1b1eff;
+    color:#fbfffeff;
+}

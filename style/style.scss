@@ -1,0 +1,61 @@
+/* SCSS HEX */
+$blue: #01a7c2ff;
+$white: #fbfffeff;
+$grey: #6d676eff;
+$black: #1b1b1eff;
+$yellow: #e9ce2cff;
+
+body { 
+    background: -webkit-canvas(lines); 
+    width:100%; 
+    /* no height needed as it is for the body */
+    background-color: $black;
+    margin: 0 0 0 0;
+    color: $white;
+} 
+header{
+    /*background-color: #0c40db;*/
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    color: $white;
+}
+.navbar{
+    color: $white;
+    transition: 0.3s;
+    background-color: $blue;
+}
+.navbar-toggler-icon{
+    color: $white;
+}
+.text-off-white{
+    color: $white !important;
+}
+.dropdown-menu{
+    background-color: $blue;
+}
+.dropdown-item:hover{
+    background-color: $black;
+}
+
+/* Boxes */
+
+.card{
+    margin: 10%;
+    box-shadow: 10px 10px 5px $grey;
+    color: $black;
+}
+@media only screen and (max-width: 800px){
+    .card{
+        width: 100%;
+    }
+}
+.in-progress-image{
+    max-width: 200px;
+    width: 100%;
+}
+.card-text{
+    color: $black;
+}
