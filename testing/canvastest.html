@@ -1,0 +1,43 @@
+<html>
+ <head>
+ <style>
+ body { background: -webkit-canvas(lines); width:100%; background-color: black;} /* no height needed as its for the body if it is for a div element of specific item then height may be needed*/
+ </style>
+
+ <script type="application/x-javascript">
+function draw(w, h) {
+    var ctx = document.getCSSCanvasContext("2d", "lines", w, h);
+    ctx.beginPath();
+    ctx.moveTo(25, 0);
+    ctx.lineTo(0, 25);
+    ctx.lineWidth = 2;
+    // set line color
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.5';
+    ctx.stroke();
+
+    /*ctx.fillStyle = "rgb(200,0,0)";
+    ctx.fillRect (10, 10, 55, 50);
+
+    ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+    ctx.fillRect (30, 30, 55, 50);*/
+}
+ </script>
+ </head>
+ <body style="margin: 0 0;" onload="draw(100, 100)">
+   <div style="color: white;">
+       <h1>Joshua Summers - Portfolio </h1>
+       <h3>This file is used to test the backgrond ability of canvas </h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare iaculis porta. Nam eu velit est. Mauris pretium consequat nulla nec pharetra. Duis at mollis nisl. Proin sollicitudin nibh ac turpis scelerisque, nec finibus magna convallis. Vestibulum faucibus ex urna, vel blandit libero consequat sit amet. Pellentesque sed ex enim. Suspendisse ac urna vitae enim pulvinar dapibus. Suspendisse molestie gravida orci, at consectetur nisl varius vel. Maecenas interdum, velit et fringilla dapibus, diam nisl vestibulum sapien, nec tincidunt tortor nisi eget nibh. Mauris facilisis lorem quis tellus volutpat, a tempor quam efficitur. Integer pulvinar egestas luctus. Nunc eget imperdiet nunc, sit amet vulputate est. Etiam ac condimentum lacus, sit amet hendrerit nisl. Maecenas luctus ut velit in tincidunt. Maecenas rhoncus sed orci vel vulputate.
+
+        Maecenas aliquam velit ut nunc faucibus, quis aliquet est luctus. Donec mollis in mauris quis congue. Cras elit ipsum, dictum vel mattis in, blandit eu diam. Donec ac vehicula felis. Sed sit amet ante sodales, maximus elit vel, interdum sem. Mauris at luctus risus. Vivamus ante nisi, auctor ac vulputate convallis, pharetra non felis. Donec convallis augue at lectus finibus, sed venenatis lacus feugiat. Etiam ornare ultricies nisi ac pretium. Nam feugiat mauris quam, id euismod magna posuere eu. Vestibulum suscipit fringilla convallis. Etiam dictum, justo vel eleifend euismod, risus purus mollis est, et consequat tortor nibh et orci. Etiam eget vulputate risus. Nunc facilisis est vitae dui convallis, et elementum ex accumsan. Phasellus ut commodo tortor.
+        
+        Etiam vehicula vulputate luctus. Quisque eu erat ut leo finibus condimentum quis id metus. Donec tincidunt eget arcu fermentum convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget massa tristique, eleifend nisl a, vulputate ante. Duis in mi nec justo mollis iaculis. Donec vitae massa magna. Ut augue eros, congue a commodo ut, pellentesque eu quam. Donec et nisl fermentum, porttitor nunc quis, lacinia tellus. Nulla et suscipit nibh.
+        
+        Donec volutpat, arcu eu vehicula laoreet, diam tellus vestibulum nisl, at varius nisl neque ut nisi. Vestibulum elit quam, sodales sed orci quis, maximus ornare est. Integer finibus vestibulum nisl, tempor accumsan tellus venenatis vitae. Phasellus lobortis sollicitudin nisi non consectetur. Pellentesque a ornare ante. Curabitur justo risus, faucibus vel molestie non, sodales quis sapien. Aliquam in arcu ex. Donec sodales ultrices nulla a pretium. Mauris dapibus ultricies odio sit amet fermentum.
+        
+        In eget molestie metus, a varius metus. Proin justo justo, pretium quis odio eget, mollis dictum elit. Vivamus in tincidunt lacus, sed ultrices nulla. Integer tristique nunc vel tincidunt lacinia. Vestibulum a odio a turpis dapibus porttitor. Suspendisse elementum nulla elit, et suscipit ipsum luctus maximus. Pellentesque ut vestibulum leo. Donec fermentum nibh vel odio auctor, eu blandit ipsum euismod. Ut massa lectus, sollicitudin id erat in, faucibus malesuada odio.
+        </p>
+   </div>
+ </body>
+
+</html>

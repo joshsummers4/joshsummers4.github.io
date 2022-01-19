@@ -33,11 +33,22 @@ header{
     background-color: #1b1b1eff;
 }
 
+/* titles */
+.sectionTitles{
+    margin-top: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
 
 /* Boxes */
+.card-row{
+    justify-content: center;
+}
 
 .card{
-    margin: 10%;
+    margin: 10% 2%;
     box-shadow: 10px 10px 5px #6d676eff;
     color: #1b1b1eff;
 }
@@ -64,4 +75,55 @@ header{
 .button-card:hover{
     background-color: #1b1b1eff;
     color:#fbfffeff;
+}
+.button-code{
+    background-color: #e9ce2cff;
+    border: none;
+    color:#fbfffeff;
+    transition: ease-out 0.5s;
+}
+.button-code:hover{
+    background-color: #1b1b1eff;
+    color:#fbfffeff;
+}
+
+.modal-dialog{
+    max-width: 800px;
+}
+.model-image {
+    width: 100%;
+    margin: 10px auto
+}
+
+/* footer */
+/*Social buttons */
+.fa, .fab {
+    padding: 20px;
+    font-size: 30px !important;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.fa:hover, .fab:hover {
+    opacity: 0.8;
+    color: white;
+    font-size: 40px !important;
+}
+
+.fa-linkedin-in {
+    background: #0077b5;
+    color: white;
+}
+
+.fa-github {
+    background: #ad5c51;
+    color: white;
+}
+
+.fa-envelope{
+    background: #01a7c2ff;
+    color: white;
 }

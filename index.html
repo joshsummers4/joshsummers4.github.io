@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Josh Summers Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css" type="text/css">
-    <title>Josh Summers</title>
+    <!--Social media stylesheet-->
+    <script src="https://kit.fontawesome.com/ab6fbf7501.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="photos/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="photos/favicon_io/favicon-32x32.png">
@@ -37,16 +39,14 @@
                             <a class="nav-link text-off-white" href="#about_me">About Me</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-off-white dropdown-toggle" href="#languages" data-bs-toggle="dropdown" id="navbarDropdown" aria-expanded="false">Languages</a>
+                            <a class="nav-link text-off-white dropdown-toggle" href="#languages" data-bs-toggle="dropdown" id="navbarDropdown" aria-expanded="false">Coding Skills</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item text-off-white" href="#htmlCss">HTML & CSS</a>
-                                <a class="dropdown-item text-off-white" href="#day2">JavaScript</a>
-                                <a class="dropdown-item text-off-white" href="#day3">PHP</a>
-                                <a class="dropdown-item text-off-white" href="#day4">SQL</a>
-                                <a class="dropdown-item text-off-white" href="#day5">Bootstrap</a>
-                                <a class="dropdown-item text-off-white" href="#day6">Python</a>
-                                <a class="dropdown-item text-off-white" href="#day7">React.js</a>
-                                <a class="dropdown-item text-off-white" href="#day8">More</a>
+                                <a class="dropdown-item text-off-white" href="#javascript">JavaScript</a>
+                                <a class="dropdown-item text-off-white" href="#bootstrap">Bootstrap</a>
+                                <a class="dropdown-item text-off-white" href="#libraries">Javascript Libraries</a>
+                                <a class="dropdown-item text-off-white" href="#php">PHP & SQL</a>
+                                <a class="dropdown-item text-off-white" href="#python">Python</a>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -55,7 +55,11 @@
                                 <a class="dropdown-item text-off-white" href="https://travellersweb.netlify.app">Travel Blog</a>
                                 <a class="dropdown-item text-off-white" href="http://joshuasummers.balticwebdev1.co.uk/Theme%20park/index.html">Theme Park</a>
                                 <a class="dropdown-item text-off-white" href="https://github.com/joshsummers4">Github Page</a>
+                                <a class="dropdown-item text-off-white" href="#">My Portfolio</a>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-off-white" href="#more">More Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-off-white" href="#footer">Contact Me</a>
@@ -78,6 +82,7 @@
             <div class="row" id="about_me">
                 <div class="col-12">
                     <h1>About Me</h1>
+                    <!--Formal Qualifications including HTML5, city and guilds PM, degree, web development course on codecadmey-->
                 </div>
             </div>
             <!--Languages-->
@@ -85,7 +90,7 @@
             <div class="row" id="htmlCss">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 sectionTitles">
                             <h3>HTML & CSS</h3>
                         </div>
                     </div>
@@ -108,13 +113,13 @@
                             <!--Card 2-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4></h4>
+                                    <h4>Corporate Sites</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="" class="card-img-top card-image" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title">Porject from codecademy course </h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="https://github.com/joshsummers4/Tea-Cosy-website" class="btn button-card">View Code</a>
+                                    <h5 class="card-title">Both Corporate and E-Commerce Sites</h5>
+                                    <p class="card-text">During my employment I have created, developed and re-designed a number of corporate and e-commerce sites for partners of the business. Please contact me for information on the sites themselves.</p>
+                                    <a href="#footer" class="btn button-card">Contact me</a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +132,7 @@
                                 <img src="./photos/angles grid.png" class="card-img-top card-image" alt="in progress">
                                 <div class="card-body">
                                     <h5 class="card-title">Grid layout for Architect</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text">One of my first attempts at creating a simple html and css web page during my Codecademy training.</p>
                                     <a href="https://joshsummers4.github.io/angles_grid/" class="btn button-card">View Site</a>
                                 </div>
                             </div>
@@ -136,13 +141,13 @@
                             <!--Card 4-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Portfolio</h4>
+                                    <h4>SCSS</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/bar chart.png" class="card-img-top card-image" alt="Bar chart created using SCSS">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <p class="card-text">Additional steps from CSS to create variables and functions to use to style a page. In my study i have created a couple of examples using scss for styling</p>
+                                    <a href="https://joshsummers4.github.io/parallax-banner/" class="btn button-card">View parallax banner site</a>
+                                    <a href="https://github.com/joshsummers4/bar-chart" class="btn button-code">View bar chart code</a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +158,7 @@
             <div class="row" id="javascript">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 sectionTitles">
                             <h3>JavaScript</h3>
                         </div>
                     </div>
@@ -162,18 +167,48 @@
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Travel Blog</h4>
+                                    <h4>Travel Blog functions</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/Travel2.png" class="card-img-top card-image" alt="Travel blog post with image slideshow">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Handlebars and functions</h5>
+                                    <p class="card-text">I used handlebars to pull the blog content into specific pages and create more boxes without needing to write the code for each box. I also used functions to create a slideshow of images in each box using the same function and it only applying to the specific slideshow thta is clicked.</p>
+                                    <a href="https://travellingsoftwaredeveloper.netlify.app/cornwall.html" class="btn button-card">View Site</a>
+                                    <a href="https://github.com/joshsummers4/TravelBlog/tree/main/public" class="btn button-code">View code</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3">
                             <!--Card 2-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Code Challenges using JS</h4>
+                                </div>
+                                <img src="./photos/challenges.png" class="card-img-top card-image" alt="Code challenges code">
+                                <div class="card-body">
+                                    <h5 class="card-title">Challenges</h5>
+                                    <p class="card-text">Created functions to answer questions such as indetifying prime and sub prime numbers as well as FizzBuzz.</p>
+                                    <a href="https://joshsummers4.github.io/Code-challenges/" class="btn button-card">View Site</a>
+                                    <a href="https://github.com/joshsummers4/Code-challenges" class="btn button-code">View code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!--Card 3-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Chore Bot</h4>
+                                </div>
+                                <img src="./photos/Chore3.png" class="card-img-top card-image" alt="chore bot game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Functions to produce an open door game</h5>
+                                    <p class="card-text">For this project I used a number of small functions that invloved decision making to produce a game of opening a door to find a desired outcome</p>
+                                    <a href="https://joshsummers4.github.io/Chorebot/" class="btn button-card">Play the game</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!--Card 4-->
                             <div class="card">
                                 <div class="card-header">
                                     <h4>Task board grid</h4>
@@ -186,34 +221,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!--Card 3-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4></h4>
-                                </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!--Card 4-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Portfolio</h4>
-                                </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -221,8 +228,8 @@
             <div class="row" id="bootstrap">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12">
-                            <h3>Bootstrap Library</h3>
+                        <div class="col-12 sectionTitles">
+                            <h3>Bootstrap Websites</h3>
                         </div>
                     </div>
                     <div class="row card-row">
@@ -232,7 +239,7 @@
                                 <div class="card-header">
                                     <h4>Travel Blog V2</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="Travellers Web">
+                                <img src="./photos/travelblog2.png" class="card-img-top card-image" alt="Travellers Web">
                                 <div class="card-body">
                                     <h5 class="card-title">Travllers Web</h5>
                                     <p class="card-text">I needed to know Bootstrap for a structing of a page in my previous job so i undertook the course on codecademy and then created a new version of a travel blog using the library.</p>
@@ -246,7 +253,7 @@
                                 <div class="card-header">
                                     <h4>Theme Park</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/themepark.png" class="card-img-top card-image" alt="Theme Park Bootstrap example">
                                 <div class="card-body">
                                     <h5 class="card-title">Training week assignment</h5>
                                     <p class="card-text">During a training week for my apprenticehsip I put what I had learnt during the week along with my Bootstrap knowledge to create a theme park website</p>
@@ -258,13 +265,13 @@
                             <!--Card 3-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4></h4>
+                                    <h4>Mobile friendly web design</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/mobile-devices.png" class="card-img-top card-image" alt="Mobile friendly layout">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Portfolio</h5>
+                                    <p class="card-text">This site uses bootstrap alongside HTML and CSS to produce the layout and styling. By using Bootstrap i have been able to create mobile frienldy sites including this portfolio.</p>
+                                    <a href="https://github.com/joshsummers4/joshsummers4.github.io" class="btn button-code">View code</a>
                                 </div>
                             </div>
                         </div>
@@ -272,217 +279,174 @@
                             <!--Card 4-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Portfolio</h4>
+                                    <h4>Codecademy project</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/admin site.png" class="card-img-top card-image" alt="Administration Site Bootstrap example">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Administration example site</h5>
+                                    <p class="card-text">This site was a project undertaken during my training course on bootstrap using an example site to try copy the layout and styling using just bootstrap classes to do this, showing what is possible using this framework alone.</p>
+                                    <a href="https://joshsummers4.github.io/administration/" class="btn button-card">View site</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--React.js-->
-            <div class="row" id="react">
+            <!--Js Libraries-->
+            <div class="row" id="libraries">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12">
-                            <h3>React.js</h3>
+                        <div class="col-12 sectionTitles">
+                            <h3>JavaScript Libraries</h3>
                         </div>
                     </div>
                     <div class="row card-row">
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Travel Blog</h4>
+                                    <h4>React.js</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/Cafe1.png" class="card-img-top card-image" alt="in progress">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
+                                    <h5 class="card-title">Espresso Project</h5>
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                     <a href="#" class="btn button-card">View Site</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 2-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Theme Park</h4>
+                                    <h4>jQuery</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/jQuery certificate.png" class="card-img-top card-image" alt="jQuery Certificate">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Training course and implementation as tabs</h5>
+                                    <p class="card-text">For a new intranet I was looking for a way to add a tabs layout and was suggested to use jQuery, as such I undertook the Codecademy program and folloowing this was able to use the knowledge to implement the tabs layout into the intranet.</p>
+                                    <button class="btn button-card" type="button" data-bs-toggle="modal" data-bs-target="#jqueryModal1">View Certificate</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="jqueryModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-dark" id="exampleModalLabel">Codecademy jQuery Course completion</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="model-image" src="./photos/jQuery certificate.png" alt="jQuery Certificate">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn button-card" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 3-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4></h4>
+                                    <h4>Node.js</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/node js certificate.png" class="card-img-top card-image" alt="Node.js Certificate">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!--Card 4-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Portfolio</h4>
-                                </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Codecademy training course</h5>
+                                    <p class="card-text">During my studies I undertook the node.js course on Codecademy, neyond the course I have not used this knowledge but I believe I can recall it if desired</p>
+                                    <button class="btn button-card" type="button" data-bs-toggle="modal" data-bs-target="#nodeModal1">View Certificate</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="nodeModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-dark" id="exampleModalLabel">Codecademy Node.js Course completion</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="model-image" src="./photos/node js certificate.png" alt="Node.js Certificate">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn button-card" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--PHP-->
+            <!--PHP & SQL-->
             <div class="row" id="php">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12">
-                            <h3>PHP</h3>
+                        <div class="col-12 sectionTitles">
+                            <h3>PHP & SQL</h3>
                         </div>
                     </div>
                     <div class="row card-row">
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Travel Blog</h4>
+                                    <h4>Form submission</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/form.png" class="card-img-top card-image" alt="PHP Form">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Enquiry form for theme park</h5>
+                                    <p class="card-text">The form set up uses both php code with sql to link the submitted form data to a database in mysql</p>
+                                    <a href="http://joshuasummers.balticwebdev1.co.uk/Theme%20park/pages/contact.html" class="btn button-card">View Form</a>
+                                    <button class="btn button-card" type="button" data-bs-toggle="modal" data-bs-target="#phpModal">View Code</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="phpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-dark" id="exampleModalLabel">PHP & SQL Code For Form Submission</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="model-image" src="./photos/php code 1.png" alt="php code">
+                                                    <img class="model-image" src="./photos/php code 2.png" alt="php code">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn button-card" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 2-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Theme Park</h4>
+                                    <h4>PHP Terminal Game</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/php game.png" class="card-img-top card-image" alt="PHP Terminal Game">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Interactive text game</h5>
+                                    <p class="card-text">In this instance I created a interactive game using commands in the terminal to direct you around a situation.</p>
+                                    <a href="https://github.com/joshsummers4/Save-the-farm-PHP" class="btn button-code">View code</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 3-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4></h4>
+                                    <h4>Codestrips</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/codestrips.png" class="card-img-top card-image" alt="in progress">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!--Card 4-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Portfolio</h4>
-                                </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--SQL-->
-            <div class="row" id="sql">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>SQL</h3>
-                        </div>
-                    </div>
-                    <div class="row card-row">
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!--Card 1-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Travel Blog</h4>
-                                </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!--Card 2-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Theme Park</h4>
-                                </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!--Card 3-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4></h4>
-                                </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!--Card 4-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Portfolio</h4>
-                                </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">SQL used in an api call</h5>
+                                    <p class="card-text">CodeStrips Codecademy project building an API with SQLite, db, express, and middleware. SQL coding used to create new a link to a database to save new robot layouts created in the browser through buttons</p>
+                                    <a href="https://github.com/joshsummers4/CodeStrips" class="btn button-code">View code</a>
                                 </div>
                             </div>
                         </div>
@@ -493,8 +457,36 @@
             <div class="row" id="python">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 sectionTitles">
                             <h3>Python</h3>
+                        </div>
+                    </div>
+                    <div class="row card-row">
+                        <div class="col-12 col-sm-6 col-lg-6">
+                            <!--Card 1-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>In Progress</h4>
+                                </div>
+                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <div class="card-body">
+                                    <!--<h5 class="card-title">Special title treatment</h5>-->
+                                    <p class="card-text">I am currently studying the data science career path course on codecademy which is helping to develop my python knowledge that I have previous gained through open university courses. I hope to be able to provide some examples of my Python work soon.</p>
+                                    <!--<a href="#" class="btn button-card">View Site</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--More-->
+            <!--Automation (ui path logo for image), Reporting, Google Analytics, Database with Access, webscraping-->
+            <div class="row" id="more">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 sectionTitles">
+                            <h3>More Skills</h3>
                         </div>
                     </div>
                     <div class="row card-row">
@@ -502,13 +494,12 @@
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Travel Blog</h4>
+                                    <h4>RPA Automation</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/UiPath.png" class="card-img-top card-image" alt="RPA Automation">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Process Automation through the use of UI Path</h5>
+                                    <p class="card-text">Uisng Ui Path allowed me to create automated processes for various activities within in the buisness from creating aily sales reports from multiple sites to updating stock levels and responsding to customer queries on a ticketing system.</p>
                                 </div>
                             </div>
                         </div>
@@ -516,13 +507,12 @@
                             <!--Card 2-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Theme Park</h4>
+                                    <h4>Database creation</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/microsoft access.png" class="card-img-top card-image" alt="Microsoft Access Databases">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Microsoft Access</h5>
+                                    <p class="card-text">As well as beign able to use SQL I am able to create databases and reports using Microsoft Access</p>
                                 </div>
                             </div>
                         </div>
@@ -530,13 +520,12 @@
                             <!--Card 3-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4></h4>
+                                    <h4>WebScraping</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/octoparse.png" class="card-img-top card-image" alt="Octoparse web scraper">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
+                                    <h5 class="card-title">Octoparse</h5>
+                                    <p class="card-text">Used to pull competitor sales prices to create comparisons</p>
                                 </div>
                             </div>
                         </div>
@@ -544,26 +533,26 @@
                             <!--Card 4-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Portfolio</h4>
+                                    <h4>Zoho One</h4>
                                 </div>
-                                <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/zoho one.png" class="card-img-top card-image" alt="Zoho One">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
+                                    <h5 class="card-title">Deluge, Zoho Sites, Zoho Analytics, automation in tickets</h5>
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn button-card">View Site</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--More-->
-            <!--Automation, Reporting, Google Analytics, Database with Access-->
+            
         </div>
     </section>
     <!--Footer-->
     <footer class="text-center p-4 text-off-white" id="footer">
-
+        <a href="https://www.linkedin.com/in/joshua-summers/" target="_blank" class="fab fa-linkedin-in"></a>
+        <a href="https://github.com/joshsummers4" target="_blank" class="fab fa-github"></a>
+        <a href="mailto:joshsummers4@yahoo.co.uk?subject=Josh Summers Portfolio" class="fa fa-envelope"></a>
     </footer>
     <!--Canvas import-->
     <script src="functions/canvas.js"></script>
