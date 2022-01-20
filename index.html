@@ -18,17 +18,17 @@
     <link rel="manifest" href="photos/favicon_io/site.webmanifest">
 </head>
 
-<body onload="draw(100, 100)">
+<body onload="draw(100, 100), cardStyles()">
     <!--Header-->
     <header class="text-center" id="header">
         <!--Scroll to top button NEEDS TO BE FINISHED
         <a role="button" id="topButton" onclick="toTop()">&Lambda;</a>
         -->
         <!-- Navbar Component -->
-        <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+        <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav">
@@ -71,7 +71,7 @@
     </header>
     <!--Main body of page-->
     <section>
-        <div class="container">
+        <div class="container-xxl px-0">
             <!--Introduction-->
             <div class="row">
                 <div class="col-12">
@@ -80,14 +80,107 @@
             </div>
             <!--About me-->
             <div class="row" id="about_me">
-                <div class="col-12">
-                    <h1>About Me</h1>
+                <div class="col-12 mx-0">
+                    
                     <!--Formal Qualifications including HTML5, city and guilds PM, degree, web development course on codecadmey-->
+                    <!--Slider text in the center display delayed by a 4 seconds to just show backgorund images then text overlay with a 0.5 black background to make it easier to read-->
+                    <!--Slide 1 bit about me-->
+                    <!--Slide 2 formal qualifications-->
+                    <!--Slide 3 golf-->
+                    <!--Slide 4 hobbies-->
+                    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item carousel-1 active">
+                                <div class="caro-caption">
+                                    <div class="caption-text">
+                                        <h1>About Me</h1>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-2">
+                                <div class="caro-caption">
+                                    <div class="caption-text">
+                                        <h5>Qualifications</h5>
+                                        <ul>
+                                            <li>1st class honors degree applied golf management studies</li>
+                                            <li>HTML5 Microsoft</li>
+                                            <li>City an guilds project management</li>
+                                            <ul>Codecademy
+                                                <li>Web Development</li>
+                                                <li>HTML5</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                                <li>C#</li>
+                                                <li>PHP</li>
+                                                <li>Bootstrap</li>
+                                                <li>SASS (scss)</li>
+                                                <li>React.js</li>
+                                                <li>Node.js</li>
+                                                <li>jQuery</li>
+                                                <li>SQL</li>
+                                                <li>Command Line</li>
+                                                <li>Git and Github</li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-3">
+                                <div class="caro-caption">
+                                    <div class="caption-text">
+                                        <h5>Career so far</h5>
+                                        <p>
+                                            Software Development Apprentice - Nectere LTD (Dec 20 - Oct 21)
+                                            In my role I developed new technology for improving the business. One of my key responsibilities was building and improving our partners’ websites using various languages including HTML, CSS, JS, bootstrap and jQuery.
+                                            I developed the company’s web store on the Evolution X platform as well as sites on Wordpress using various techniques.
+                                            I coded back end workflows and automations which improved customer services within the ticketing service using the Deluge scripting language within the ZOHO one system.
+                                            I built automations within UiPath which reduced manual input by over two thirds. For example I created a process which collates orders from multiple webstores into reports for easy use by a user.
+                                            Within the Web and Data team I built and improved databases with Microsoft Access and SQL and linked these to KPIs and billing dashboards within ZOHO analytics.
+                                            During my apprenticeship I undertook training courses including advanced website design, systems development and received qualifications in MTA Microsoft HTML5 and City and guild project management.
+                                        </p>
+                                        <p>
+                                            The Marriott Forest of Arden Golf and Country Club - Golf Operations Supervisor (Feb 2018 – Nov 2020), Golf Operations Associate (Mar 2017 – Sept 2017)
+                                            My key role was to plan and run multiple corporate golf days for up to 120 people, personalising each event to the client’s needs. This involved communicating and organising the operations team to provide the event and an excellent client experience.  
+                                            As a senior member of the team I assisted in managing a small team including full time staff and university placements students.
+                                            I was also responsible for producing data analysis and reports for the golf department’s performance and suggest areas of improvement. For example more demand focused visitor rates which were implemented for the following year. 
+                                            The Belfry Hotel and Resort - Golf Retail Supervisor (Sept 2017 – Feb 2018)
+                                            My key responsibilities included providing guidance and direction to the retail team on a day to day basis to maximise efficiency and profitability of the business.
+                                            As supervisor I played a significant role in training all members of the team on the processes of the business and the unique selling points of the products. This led to greater customer engagement, improved customer service and increases in sales.
+                                            Royal Cinque Ports Golf Club - Head Assistant PGA Professional (May 2016 – Jan 2017)
+                                            After graduation my role became Head Assistant which required helping, training and leading my new fellow assistants and assisting the owner with business decisions.
+                                            I helped facilitate the smooth running of international events including The Open final qualifying and corporate events for global companies such as Aon and Deloitte. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-4">
+                                <div class="caro-caption">
+                                    <div class="caption-text">
+                                        <h5>Golf & Hobbies</h5>
+                                        <p>
+                                            Golf - I have been a professional golfer since October 2014
+                                            Sports - Beyond golf I have a keen interest in many sports including football and F1
+                                            Technology - I am always interested in learning about the latest technology whether its in daily life or in my profession 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <!--Languages-->
             <!--HTML and CSS-->
-            <div class="row" id="htmlCss">
+            <div class="row px-2" id="htmlCss">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 sectionTitles">
@@ -119,6 +212,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Both Corporate and E-Commerce Sites</h5>
                                     <p class="card-text">During my employment I have created, developed and re-designed a number of corporate and e-commerce sites for partners of the business. Please contact me for information on the sites themselves.</p>
+                                    <p class="card-text">I have published personal sites using <a href="https://travellersweb.netlify.app" target="_blank">Netlify</a> and <a href="#">Github</a> as well as coporate sites through Wordpress and Evolution-X</p>
                                     <a href="#footer" class="btn button-card">Contact me</a>
                                 </div>
                             </div>
@@ -155,7 +249,7 @@
                 </div>
             </div>
             <!--Javascript-->
-            <div class="row" id="javascript">
+            <div class="row px-2" id="javascript">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 sectionTitles">
@@ -225,7 +319,7 @@
                 </div>
             </div>
             <!--Bootstrap-->
-            <div class="row" id="bootstrap">
+            <div class="row px-2" id="bootstrap">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 sectionTitles">
@@ -241,8 +335,8 @@
                                 </div>
                                 <img src="./photos/travelblog2.png" class="card-img-top card-image" alt="Travellers Web">
                                 <div class="card-body">
-                                    <h5 class="card-title">Travllers Web</h5>
-                                    <p class="card-text">I needed to know Bootstrap for a structing of a page in my previous job so i undertook the course on codecademy and then created a new version of a travel blog using the library.</p>
+                                    <h5 class="card-title">Travllers Web - multi page site</h5>
+                                    <p class="card-text">I needed to know Bootstrap for a structing of a page in my previous job so I undertook the course on codecademy and then created a new version of a travel blog using the library.</p>
                                     <a href="https://travellersweb.netlify.app" class="btn button-card" target="_blank">View Site</a>
                                 </div>
                             </div>
@@ -293,7 +387,7 @@
                 </div>
             </div>
             <!--Js Libraries-->
-            <div class="row" id="libraries">
+            <div class="row px-2" id="libraries">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 sectionTitles">
@@ -301,7 +395,7 @@
                         </div>
                     </div>
                     <div class="row card-row">
-                        <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
@@ -315,7 +409,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <!--Card 2-->
                             <div class="card">
                                 <div class="card-header">
@@ -346,7 +440,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <!--Card 3-->
                             <div class="card">
                                 <div class="card-header">
@@ -381,7 +475,7 @@
                 </div>
             </div>
             <!--PHP & SQL-->
-            <div class="row" id="php">
+            <div class="row px-2" id="php">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 sectionTitles">
@@ -389,7 +483,7 @@
                         </div>
                     </div>
                     <div class="row card-row">
-                        <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
@@ -422,7 +516,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <!--Card 2-->
                             <div class="card">
                                 <div class="card-header">
@@ -436,7 +530,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <!--Card 3-->
                             <div class="card">
                                 <div class="card-header">
@@ -454,7 +548,7 @@
                 </div>
             </div>
             <!--Python-->
-            <div class="row" id="python">
+            <div class="row px-2" id="python">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 sectionTitles">
@@ -462,7 +556,7 @@
                         </div>
                     </div>
                     <div class="row card-row">
-                        <div class="col-12 col-sm-6 col-lg-6">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
@@ -482,7 +576,7 @@
             </div>
             <!--More-->
             <!--Automation (ui path logo for image), Reporting, Google Analytics, Database with Access, webscraping-->
-            <div class="row" id="more">
+            <div class="row px-2" id="more">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 sectionTitles">
@@ -542,10 +636,22 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!--Card 5-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Google Analytics</h4>
+                                </div>
+                                <img src="./photos/googleanalytics.jpeg" class="card-img-top card-image" alt="google analytics">
+                                <div class="card-body">
+                                    <h5 class="card-title">Site traffic tracking</h5>
+                                    <p class="card-text">In my previous role I was responsible for setting up the use of google analytics to track site traffic across multiple web stores. This information was be used to plan makreting and strategy based on user behaviour.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <!--Footer-->
@@ -563,6 +669,8 @@
     <script>
         window.onscroll = function() {scrollFunction()};
     </script>
+    <!--card styling-->
+    <script src="functions/styling.js"></script>
     <!-- Bootstrap's JavaScript Files
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
