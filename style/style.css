@@ -1,7 +1,4 @@
-body { 
-    background: -webkit-canvas(lines); 
-    width:100%; 
-    /* no height needed as it is for the body */
+body {
     background-color: #1b1b1eff;
     margin: 0 0 0 0;
     color: #fbfffeff;
@@ -41,6 +38,9 @@ header{
 }
 
 /* titles */
+#name{
+    margin: 40px 0;
+}
 .sectionTitles{
     margin-top: 40px;
 }
@@ -55,16 +55,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .caro-caption{
-    position: absolute;
+    margin: 0;
     height: 100%;
     width: 100%;
-    justify-content: center;
     text-align: center;
     background-image: linear-gradient(to right, rgba(27,27,30,0.2), rgba(27,27,30,0.8), rgba(27,27,30,0.8), rgba(27,27,30,0.2));
 }
 .caption-text{
-    margin: auto 20%;
     overflow: hidden;
+}
+.carousel-modal{
+    color: #1b1b1eff;
 }
 
 /*carousel background image */
@@ -80,13 +81,35 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 .carousel-2{
-    background-image: url("../photos/graduation.JPG"), url("../photos/Web\ Development\ completion.png");
+    background-image: url("../photos/code-1076536_640.jpg"), url("../photos/web-1935737_1920.png");
 }
 .carousel-3{
-    background-image: url("../photos/code-1076536_640.jpg"), url("../photos/web-1935737_1920.png");
+    background-image: url("../photos/graduation.JPG"), url("../photos/Web\ Development\ completion.png");
 }
 .carousel-4{
     background-image: url("../photos/golf.jpeg"), url("../photos/IMG_0352.jpeg");
+}
+/* Making backgorund single image for smaller screens */
+@media only screen and (max-width: 700px) {
+    .carousel-item{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .carousel-2{
+        background-image: url("../photos/code-1076536_640.jpg");
+    }
+    .carousel-3{
+        background-image: url("../photos/graduation.JPG");
+    }
+    .carousel-4{
+        background-image: url("../photos/golf.jpeg");
+    }
+}
+
+/*carousel modals*/
+.modal-title{
+    text-align: center;
+    color:#1b1b1eff;
 }
 
 /* Boxes */

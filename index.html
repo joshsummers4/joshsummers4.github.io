@@ -16,9 +16,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="photos/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="photos/favicon_io/site.webmanifest">
+    
 </head>
 
-<body onload="draw(100, 100), cardStyles()">
+<body onload="draw(), cardStyles()" id="body">
     <!--Header-->
     <header class="text-center" id="header">
         <!--Scroll to top button NEEDS TO BE FINISHED
@@ -74,94 +75,152 @@
         <div class="container-xxl px-0">
             <!--Introduction-->
             <div class="row">
-                <div class="col-12">
-                    <h1>Joshua Summers</h1>
+                <div class="col-12" id="name">
+                    <h1 style="font-size: 50px">Joshua Summers</h1>
                 </div>
             </div>
             <!--About me-->
             <div class="row" id="about_me">
                 <div class="col-12 mx-0">
-                    
-                    <!--Formal Qualifications including HTML5, city and guilds PM, degree, web development course on codecadmey-->
-                    <!--Slider text in the center display delayed by a 4 seconds to just show backgorund images then text overlay with a 0.5 black background to make it easier to read-->
-                    <!--Slide 1 bit about me-->
-                    <!--Slide 2 formal qualifications-->
-                    <!--Slide 3 golf-->
-                    <!--Slide 4 hobbies-->
                     <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
+                            <!--Slide 1 bit about me-->
                             <div class="carousel-item carousel-1 active">
-                                <div class="caro-caption">
-                                    <div class="caption-text">
+                                <div class="caro-caption row align-items-center justify-content-center">
+                                    <div class="col-11 col-sm-9 caption-text">
                                         <h1>About Me</h1>
-                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <h4>I am a Junior software Developer with ever growing knowledge of the industry and experience of working with a team and as a project leader.</h4>
+                                        <button class="btn button-code" type="button" data-bs-toggle="modal" data-bs-target="#aboutModal">Learn more about me</button>
+                                        <!-- About me Modal -->
+                                        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">About me - Josh Summers</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body carousel-modal">
+                                                        <p>I am a Junior Software Developer with an ever growing passion for digital development. 
+                                                            <br>I graduated from the University of Birmingham in 2016 with a 1st class honours degree in Applied Golf Management Studies. 
+                                                            <br>I am an outgoing and enthusiastic team player and also a self-starter who is able to motivate myself when I work alone. 
+                                                            <br>I am confident at decision making, and adept at learning new skills. 
+                                                            <br>I am excited by technological advancements in the digital world, and keen to play my part in developing new globally enhancing software.
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn button-card" target="_blank" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--Slide 2 career so far-->
                             <div class="carousel-item carousel-2">
-                                <div class="caro-caption">
-                                    <div class="caption-text">
-                                        <h5>Qualifications</h5>
-                                        <ul>
-                                            <li>1st class honors degree applied golf management studies</li>
-                                            <li>HTML5 Microsoft</li>
-                                            <li>City an guilds project management</li>
-                                            <ul>Codecademy
-                                                <li>Web Development</li>
-                                                <li>HTML5</li>
-                                                <li>CSS</li>
-                                                <li>Javascript</li>
-                                                <li>C#</li>
-                                                <li>PHP</li>
-                                                <li>Bootstrap</li>
-                                                <li>SASS (scss)</li>
-                                                <li>React.js</li>
-                                                <li>Node.js</li>
-                                                <li>jQuery</li>
-                                                <li>SQL</li>
-                                                <li>Command Line</li>
-                                                <li>Git and Github</li>
-                                            </ul>
-                                        </ul>
+                                <div class="caro-caption row align-items-center justify-content-center">
+                                    <div class="col-11 col-sm-9 caption-text">
+                                        <h1>Career so far</h1>
+                                        <h4>I began my working life within the golf industry, often leading small teams on projects and events at leading golf club. which has helped me to develop th team working skills and process based working attitude needed as a Software Developer</h4>
+                                        <button class="btn button-code" type="button" data-bs-toggle="modal" data-bs-target="#careerModal">Learn more about my career to date</button>
+                                        <!-- qulaifications Modal -->
+                                        <div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header text-center">
+                                                        <h5 class="modal-title" id="exampleModalLabel">My Career so far - Josh Summers</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body carousel-modal">
+                                                        <p>
+                                                            <strong>Software Development Apprentice - Nectere LTD</strong><br>
+                                                            In my role I developed new technology for improving the business.
+                                                            One of my key responsibilities was building and improving our partners’ websites using various coding techniques.
+                                                            I developed these partner’s web store on the Evolution X platform as well as sites on Wordpress.
+                                                            I coded back end workflows and automations using the Deluge scripting language within the ZOHO one system.
+                                                            I built automations within UiPath which reduced manual input by over two thirds.
+                                                            I also undertook training courses including advanced website design and systems development, receiving qualifications in MTA Microsoft HTML5 and City and Guild's Software Development Methodologies.
+                                                        </p>
+                                                        <p>
+                                                            <strong>The Marriott Forest of Arden Golf and Country Club - Golf Operations Supervisor</strong><br>
+                                                            My key role was to plan and run corporate golf days for up to 120 people, personalising each event to the client’s needs. 
+                                                            This also involved communicating and organising the operations team to provide the event and an excellent client experience.
+                                                            I was also responsible for producing data analysis and reports for the golf department’s performance and suggest areas of improvement.
+                                                            <br><strong>The Belfry Hotel and Resort - Golf Retail Supervisor</strong><br>
+                                                            My key responsibilities included providing guidance and direction to the retail / operations team on a day to day basis to maximise efficiency and profitability of the business.
+                                                            <br><strong>Royal Cinque Ports Golf Club - Head Assistant PGA Professional</strong><br>
+                                                            My role as Head Assistant required helping, training and leading my new fellow assistants and assisting the owner with business decisions.
+                                                            As well as assisting the smooth running of international events including The Open final qualifying and corporate events for global companies. 
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn button-card" target="_blank" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
+                            <!--Slide 2 formal qualifications-->
                             <div class="carousel-item carousel-3">
-                                <div class="caro-caption">
-                                    <div class="caption-text">
-                                        <h5>Career so far</h5>
-                                        <p>
-                                            Software Development Apprentice - Nectere LTD (Dec 20 - Oct 21)
-                                            In my role I developed new technology for improving the business. One of my key responsibilities was building and improving our partners’ websites using various languages including HTML, CSS, JS, bootstrap and jQuery.
-                                            I developed the company’s web store on the Evolution X platform as well as sites on Wordpress using various techniques.
-                                            I coded back end workflows and automations which improved customer services within the ticketing service using the Deluge scripting language within the ZOHO one system.
-                                            I built automations within UiPath which reduced manual input by over two thirds. For example I created a process which collates orders from multiple webstores into reports for easy use by a user.
-                                            Within the Web and Data team I built and improved databases with Microsoft Access and SQL and linked these to KPIs and billing dashboards within ZOHO analytics.
-                                            During my apprenticeship I undertook training courses including advanced website design, systems development and received qualifications in MTA Microsoft HTML5 and City and guild project management.
-                                        </p>
-                                        <p>
-                                            The Marriott Forest of Arden Golf and Country Club - Golf Operations Supervisor (Feb 2018 – Nov 2020), Golf Operations Associate (Mar 2017 – Sept 2017)
-                                            My key role was to plan and run multiple corporate golf days for up to 120 people, personalising each event to the client’s needs. This involved communicating and organising the operations team to provide the event and an excellent client experience.  
-                                            As a senior member of the team I assisted in managing a small team including full time staff and university placements students.
-                                            I was also responsible for producing data analysis and reports for the golf department’s performance and suggest areas of improvement. For example more demand focused visitor rates which were implemented for the following year. 
-                                            The Belfry Hotel and Resort - Golf Retail Supervisor (Sept 2017 – Feb 2018)
-                                            My key responsibilities included providing guidance and direction to the retail team on a day to day basis to maximise efficiency and profitability of the business.
-                                            As supervisor I played a significant role in training all members of the team on the processes of the business and the unique selling points of the products. This led to greater customer engagement, improved customer service and increases in sales.
-                                            Royal Cinque Ports Golf Club - Head Assistant PGA Professional (May 2016 – Jan 2017)
-                                            After graduation my role became Head Assistant which required helping, training and leading my new fellow assistants and assisting the owner with business decisions.
-                                            I helped facilitate the smooth running of international events including The Open final qualifying and corporate events for global companies such as Aon and Deloitte. 
-                                        </p>
+                                <div class="caro-caption row align-items-center justify-content-center">
+                                    <div class="col-11 col-sm-9 caption-text">
+                                        <h1>Qualifications</h1>
+                                        <h4>I have a 1st class honors degree from the University of Birmingham (UK) and have succesfully passed a number of online coding certificates and qualifications.</h4>
+                                        <button class="btn button-code" type="button" data-bs-toggle="modal" data-bs-target="#qualiModal">Learn more about my qualifications</button>
+                                        <!-- qulaifications Modal -->
+                                        <div class="modal fade" id="qualiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">My Qualifications - Josh Summers</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body carousel-modal">
+                                                        <ul>
+                                                            <li>1st class honors degree applied golf management studies</li>
+                                                            <li>HTML5 Microsoft</li>
+                                                            <li>City and Guild Software Development Methodologies</li>
+                                                            <ul>Codecademy Courses completed:
+                                                                <li>Web Development</li>
+                                                                <li>HTML5</li>
+                                                                <li>CSS</li>
+                                                                <li>Javascript</li>
+                                                                <li>C#</li>
+                                                                <li>PHP</li>
+                                                                <li>Bootstrap</li>
+                                                                <li>SASS (scss)</li>
+                                                                <li>React.js</li>
+                                                                <li>Node.js</li>
+                                                                <li>jQuery</li>
+                                                                <li>SQL</li>
+                                                                <li>Command Line</li>
+                                                                <li>Git and Github</li>
+                                                            </ul>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn button-card" target="_blank" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
+                            <!--Slide 4 hobbies-->
                             <div class="carousel-item carousel-4">
-                                <div class="caro-caption">
-                                    <div class="caption-text">
-                                        <h5>Golf & Hobbies</h5>
+                                <div class="caro-caption row align-items-center justify-content-center">
+                                    <div class="col-11 col-sm-9 caption-text">
+                                        <h1>Golf & Hobbies</h1>
                                         <p>
-                                            Golf - I have been a professional golfer since October 2014
-                                            Sports - Beyond golf I have a keen interest in many sports including football and F1
-                                            Technology - I am always interested in learning about the latest technology whether its in daily life or in my profession 
+                                            <strong>Golf</strong> - I am a former professional golfer and try to play on a regular basis<br>
+                                            <strong>Sports</strong> - Beyond golf I have a keen interest in many sports including football and F1<br>
+                                            <strong>Travelling and Hiking</strong> - In my free time if I am not playing golf or watching sport I am often out exploring and hiking around some of the great placest the country has to offer<br>
+                                            <strong>Technology</strong> - I am always interested in learning about the latest technology whether its in daily life or in my profession 
                                         </p>
                                     </div>
                                 </div>
