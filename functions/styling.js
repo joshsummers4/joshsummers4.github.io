@@ -17,3 +17,18 @@ function cardStyles(){
         }
     }
 }
+function modalStyles(){
+    const modalArray = document.getElementsByClassName("modal-header");
+    const modalTitle = document.getElementsByClassName("modal-title");
+    for(let n = 0; n < modalArray.length; n++){
+        let current = modalArray[n]
+        let currentTitle = modalTitle[n]
+        if(n % 2 !== 0){
+            current.style.backgroundColor = blue;
+            currentTitle.style.color = white;
+        } else {
+            current.style.backgroundColor = black;
+            currentTitle.style.color = yellow;
+        }
+    }
+}

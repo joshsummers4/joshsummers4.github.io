@@ -41,6 +41,10 @@ header{
 #name{
     margin: 40px 0;
 }
+#name h1{
+    font-size: 50px;
+}
+
 .sectionTitles{
     margin-top: 40px;
 }
@@ -61,11 +65,15 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     background-image: linear-gradient(to right, rgba(27,27,30,0.2), rgba(27,27,30,0.8), rgba(27,27,30,0.8), rgba(27,27,30,0.2));
 }
-.caption-text{
+.caption-text p{
     overflow: hidden;
+    line-height: 1.5;
 }
 .carousel-modal{
     color: #1b1b1eff;
+}
+.carousel-btn{ 
+    margin-top: 20px;
 }
 
 /*carousel background image */
@@ -107,9 +115,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*carousel modals*/
-.modal-title{
+.modal-header{
     text-align: center;
-    color:#1b1b1eff;
+}
+.modal-body li{
+    text-align: start;
 }
 
 /* Boxes */

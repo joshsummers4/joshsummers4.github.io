@@ -19,7 +19,7 @@
     
 </head>
 
-<body onload="draw(), cardStyles()" id="body">
+<body onload="draw(), cardStyles(), modalStyles()" id="body">
     <!--Header-->
     <header class="text-center" id="header">
         <!--Scroll to top button NEEDS TO BE FINISHED
@@ -76,7 +76,7 @@
             <!--Introduction-->
             <div class="row">
                 <div class="col-12" id="name">
-                    <h1 style="font-size: 50px">Joshua Summers</h1>
+                    <h1>Joshua Summers</h1>
                 </div>
             </div>
             <!--About me-->
@@ -85,23 +85,22 @@
                     <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <!--Slide 1 bit about me-->
-                            <div class="carousel-item carousel-1 active">
+                            <div class="carousel-item carousel-1 active" data-bs-interval="10000">
                                 <div class="caro-caption row align-items-center justify-content-center">
                                     <div class="col-11 col-sm-9 caption-text">
                                         <h1>About Me</h1>
                                         <h4>I am a Junior software Developer with ever growing knowledge of the industry and experience of working with a team and as a project leader.</h4>
-                                        <button class="btn button-code" type="button" data-bs-toggle="modal" data-bs-target="#aboutModal">Learn more about me</button>
+                                        <button class="btn button-code carousel-btn" type="button" data-bs-toggle="modal" data-bs-target="#aboutModal">Learn more about me</button>
                                         <!-- About me Modal -->
                                         <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <h5 class="modal-title" id="exampleModalLabel">About me - Josh Summers</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body carousel-modal">
                                                         <p>I am a Junior Software Developer with an ever growing passion for digital development. 
-                                                            <br>I graduated from the University of Birmingham in 2016 with a 1st class honours degree in Applied Golf Management Studies. 
                                                             <br>I am an outgoing and enthusiastic team player and also a self-starter who is able to motivate myself when I work alone. 
                                                             <br>I am confident at decision making, and adept at learning new skills. 
                                                             <br>I am excited by technological advancements in the digital world, and keen to play my part in developing new globally enhancing software.
@@ -117,19 +116,19 @@
                                 </div>
                             </div>
                             <!--Slide 2 career so far-->
-                            <div class="carousel-item carousel-2">
+                            <div class="carousel-item carousel-2" data-bs-interval="10000">
                                 <div class="caro-caption row align-items-center justify-content-center">
                                     <div class="col-11 col-sm-9 caption-text">
                                         <h1>Career so far</h1>
                                         <h4>I began my working life within the golf industry, often leading small teams on projects and events at leading golf club. which has helped me to develop th team working skills and process based working attitude needed as a Software Developer</h4>
-                                        <button class="btn button-code" type="button" data-bs-toggle="modal" data-bs-target="#careerModal">Learn more about my career to date</button>
+                                        <button class="btn button-code carousel-btn" type="button" data-bs-toggle="modal" data-bs-target="#careerModal">Learn more about my career to date</button>
                                         <!-- qulaifications Modal -->
                                         <div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header text-center">
                                                         <h5 class="modal-title" id="exampleModalLabel">My Career so far - Josh Summers</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body carousel-modal">
                                                         <p>
@@ -144,13 +143,13 @@
                                                         <p>
                                                             <strong>The Marriott Forest of Arden Golf and Country Club - Golf Operations Supervisor</strong><br>
                                                             My key role was to plan and run corporate golf days for up to 120 people, personalising each event to the client’s needs. 
-                                                            This also involved communicating and organising the operations team to provide the event and an excellent client experience.
+                                                            This also involved leading, communicating and organising the operations team before, during and after the event,
                                                             I was also responsible for producing data analysis and reports for the golf department’s performance and suggest areas of improvement.
                                                             <br><strong>The Belfry Hotel and Resort - Golf Retail Supervisor</strong><br>
-                                                            My key responsibilities included providing guidance and direction to the retail / operations team on a day to day basis to maximise efficiency and profitability of the business.
+                                                            My key responsibilities included providing guidance and direction to the retail & operations team on a day to day basis to maximise efficiency and profitability.
                                                             <br><strong>Royal Cinque Ports Golf Club - Head Assistant PGA Professional</strong><br>
-                                                            My role as Head Assistant required helping, training and leading my new fellow assistants and assisting the owner with business decisions.
-                                                            As well as assisting the smooth running of international events including The Open final qualifying and corporate events for global companies. 
+                                                            My role responsibilities included helping, training and leading my new fellow assistants and assisting the owner with business decisions.
+                                                            As well as assisting in the smooth running of international events including The Open final qualifying and corporate events for global companies. 
                                                         </p>
                                                     </div>
                                                     <div class="modal-footer">
@@ -163,42 +162,42 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--Slide 2 formal qualifications-->
-                            <div class="carousel-item carousel-3">
+                            <!--Slide 3 formal qualifications-->
+                            <div class="carousel-item carousel-3" data-bs-interval="10000">
                                 <div class="caro-caption row align-items-center justify-content-center">
                                     <div class="col-11 col-sm-9 caption-text">
                                         <h1>Qualifications</h1>
                                         <h4>I have a 1st class honors degree from the University of Birmingham (UK) and have succesfully passed a number of online coding certificates and qualifications.</h4>
-                                        <button class="btn button-code" type="button" data-bs-toggle="modal" data-bs-target="#qualiModal">Learn more about my qualifications</button>
+                                        <button class="btn button-code carousel-btn" type="button" data-bs-toggle="modal" data-bs-target="#qualiModal">Learn more about my qualifications</button>
                                         <!-- qulaifications Modal -->
                                         <div class="modal fade" id="qualiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <h5 class="modal-title" id="exampleModalLabel">My Qualifications - Josh Summers</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body carousel-modal">
-                                                        <ul>
-                                                            <li>1st class honors degree applied golf management studies</li>
-                                                            <li>HTML5 Microsoft</li>
-                                                            <li>City and Guild Software Development Methodologies</li>
-                                                            <ul>Codecademy Courses completed:
-                                                                <li>Web Development</li>
-                                                                <li>HTML5</li>
-                                                                <li>CSS</li>
-                                                                <li>Javascript</li>
-                                                                <li>C#</li>
-                                                                <li>PHP</li>
-                                                                <li>Bootstrap</li>
-                                                                <li>SASS (scss)</li>
-                                                                <li>React.js</li>
-                                                                <li>Node.js</li>
-                                                                <li>jQuery</li>
-                                                                <li>SQL</li>
-                                                                <li>Command Line</li>
-                                                                <li>Git and Github</li>
-                                                            </ul>
+                                                        <p>I graduated from The University of Birmingham (UK) with a 1st Class Honors Degree in Applied Golf Management Studies B.sc</p>
+                                                        <ul>During my apprenticeship I also achieved the following qualifications:
+                                                            <li>Microsoft MTA HTML5 Application Development Fundamentals</li>
+                                                            <li>City and Guilds Software Development Methodologies</li>
+                                                        </ul>
+                                                        <ul>Before an during my apprenticeship I studied and completed a number of online courses with Codecademy, and I have put in to practice a lot of what I have learnt from this training into the projects on this portfolio:
+                                                            <li>Web Development career path</li>
+                                                            <li>HTML5</li>
+                                                            <li>CSS</li>
+                                                            <li>Javascript</li>
+                                                            <li>C#</li>
+                                                            <li>PHP</li>
+                                                            <li>Bootstrap</li>
+                                                            <li>SASS (scss)</li>
+                                                            <li>React.js</li>
+                                                            <li>Node.js</li>
+                                                            <li>jQuery</li>
+                                                            <li>SQL</li>
+                                                            <li>Command Line</li>
+                                                            <li>Git and Github</li>
                                                         </ul>
                                                     </div>
                                                     <div class="modal-footer">
@@ -212,7 +211,7 @@
                                 </div>
                             </div>
                             <!--Slide 4 hobbies-->
-                            <div class="carousel-item carousel-4">
+                            <div class="carousel-item carousel-4" data-bs-interval="10000">
                                 <div class="caro-caption row align-items-center justify-content-center">
                                     <div class="col-11 col-sm-9 caption-text">
                                         <h1>Golf & Hobbies</h1>
@@ -253,10 +252,10 @@
                                 <div class="card-header">
                                     <h4>Travel Blog V1</h4>
                                 </div>
-                                <img src="./photos/Travel1.png" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/Travel1.png" class="card-img-top card-image" alt="My Travel Blog">
                                 <div class="card-body">
                                     <h5 class="card-title">Travelling Software Developer</h5>
-                                    <p class="card-text">My travel blog V1</p>
+                                    <p class="card-text">Whilst learning about Front End Development through codecademy I used what I had learnt to build my own travel blog using, HTML, CSS & Javascript.</p>
                                     <a href="https://travellingsoftwaredeveloper.netlify.app" class="btn button-card" target="_blank">View Site</a>
                                 </div>
                             </div>
@@ -267,7 +266,6 @@
                                 <div class="card-header">
                                     <h4>Corporate Sites</h4>
                                 </div>
-                                <img src="" class="card-img-top card-image" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Both Corporate and E-Commerce Sites</h5>
                                     <p class="card-text">During my employment I have created, developed and re-designed a number of corporate and e-commerce sites for partners of the business. Please contact me for information on the sites themselves.</p>
@@ -282,10 +280,10 @@
                                 <div class="card-header">
                                     <h4>Architect design</h4>
                                 </div>
-                                <img src="./photos/angles grid.png" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/angles grid.png" class="card-img-top card-image" alt="Angles grid design">
                                 <div class="card-body">
                                     <h5 class="card-title">Grid layout for Architect</h5>
-                                    <p class="card-text">One of my first attempts at creating a simple html and css web page during my Codecademy training.</p>
+                                    <p class="card-text">One of my first attempts at creating a simple HTML and CSS web page during my Codecademy training.</p>
                                     <a href="https://joshsummers4.github.io/angles_grid/" class="btn button-card" target="_blank">View Site</a>
                                 </div>
                             </div>
@@ -298,7 +296,7 @@
                                 </div>
                                 <img src="./photos/bar chart.png" class="card-img-top card-image" alt="Bar chart created using SCSS">
                                 <div class="card-body">
-                                    <p class="card-text">Additional steps from CSS to create variables and functions to use to style a page. In my study i have created a couple of examples using scss for styling</p>
+                                    <p class="card-text">Additional steps from CSS to create variables and functions to style a page. In my study I have created a couple of examples using scss for styling</p>
                                     <a href="https://joshsummers4.github.io/parallax-banner/" class="btn button-card" target="_blank">View parallax banner site</a>
                                     <a href="https://github.com/joshsummers4/bar-chart" class="btn button-code" target="_blank">View bar chart code</a>
                                 </div>
@@ -325,7 +323,7 @@
                                 <img src="./photos/Travel2.png" class="card-img-top card-image" alt="Travel blog post with image slideshow">
                                 <div class="card-body">
                                     <h5 class="card-title">Handlebars and functions</h5>
-                                    <p class="card-text">I used handlebars to pull the blog content into specific pages and create more boxes without needing to write the code for each box. I also used functions to create a slideshow of images in each box using the same function and it only applying to the specific slideshow thta is clicked.</p>
+                                    <p class="card-text">I used handlebars to pull the blog content into specific pages and create more boxes without needing to write the code for each box. I also used functions to create a slideshow of images in each box using the same function and it only applying to the specific slideshow that is clicked.</p>
                                     <a href="https://travellingsoftwaredeveloper.netlify.app/cornwall.html" class="btn button-card" target="_blank">View Site</a>
                                     <a href="https://github.com/joshsummers4/TravelBlog/tree/main/public" class="btn button-code" target="_blank">View code</a>
                                 </div>
@@ -340,7 +338,7 @@
                                 <img src="./photos/challenges.png" class="card-img-top card-image" alt="Code challenges code">
                                 <div class="card-body">
                                     <h5 class="card-title">Challenges</h5>
-                                    <p class="card-text">Created functions to answer questions such as indetifying prime and sub prime numbers as well as FizzBuzz.</p>
+                                    <p class="card-text">Created functions to answer questions such as identifying prime and sub prime numbers as well as FizzBuzz.</p>
                                     <a href="https://joshsummers4.github.io/Code-challenges/" class="btn button-card" target="_blank">View Site</a>
                                     <a href="https://github.com/joshsummers4/Code-challenges" class="btn button-code" target="_blank">View code</a>
                                 </div>
@@ -366,10 +364,10 @@
                                 <div class="card-header">
                                     <h4>Task board grid</h4>
                                 </div>
-                                <img src="./photos/task site.png" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/task site.png" class="card-img-top card-image" alt="Task Board website">
                                 <div class="card-body">
                                     <h5 class="card-title">Task manager example</h5>
-                                    <p class="card-text">Site uses function to create new tasks</p>
+                                    <p class="card-text">This is one of my early Codecademy projects where I built a site that uses a javascript function to create new tasks with data inputted into a cell.</p>
                                     <a href="https://joshsummers4.github.io/task_board_grid/" class="btn button-card" target="_blank">View Site</a>
                                 </div>
                             </div>
@@ -423,7 +421,7 @@
                                 <img src="./photos/mobile-devices.png" class="card-img-top card-image" alt="Mobile friendly layout">
                                 <div class="card-body">
                                     <h5 class="card-title">Portfolio</h5>
-                                    <p class="card-text">This site uses bootstrap alongside HTML and CSS to produce the layout and styling. By using Bootstrap i have been able to create mobile frienldy sites including this portfolio.</p>
+                                    <p class="card-text">This site uses bootstrap alongside HTML and CSS to produce the layout and styling. By using Bootstrap I have been able to create mobile friendly sites including this portfolio.</p>
                                     <a href="https://github.com/joshsummers4/joshsummers4.github.io" class="btn button-code" target="_blank">View code</a>
                                 </div>
                             </div>
@@ -460,10 +458,10 @@
                                 <div class="card-header">
                                     <h4>React.js</h4>
                                 </div>
-                                <img src="./photos/Cafe1.png" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/Cafe1.png" class="card-img-top card-image" alt="Espresso react.js application">
                                 <div class="card-body">
                                     <h5 class="card-title">Espresso Project</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text">This project was the completion of my React.js course where I used what I had learnt to implement that api call code to create a tool for a coffee shop.</p>
                                     <a href="#" class="btn button-card" target="_blank">View Site</a>
                                 </div>
                             </div>
@@ -477,15 +475,15 @@
                                 <img src="./photos/jQuery certificate.png" class="card-img-top card-image" alt="jQuery Certificate">
                                 <div class="card-body">
                                     <h5 class="card-title">Training course and implementation as tabs</h5>
-                                    <p class="card-text">For a new intranet I was looking for a way to add a tabs layout and was suggested to use jQuery, as such I undertook the Codecademy program and folloowing this was able to use the knowledge to implement the tabs layout into the intranet.</p>
+                                    <p class="card-text">For a new intranet I was looking for a way to add a tabs layout and was suggested to use jQuery, as such I undertook the Codecademy program and following this was able to use the knowledge to implement the tabs layout into the intranet.</p>
                                     <button class="btn button-card" type="button" data-bs-toggle="modal" data-bs-target="#jqueryModal1">View Certificate</button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="jqueryModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title text-dark" id="exampleModalLabel">Codecademy jQuery Course completion</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <h5 class="modal-title" id="exampleModalLabel">Codecademy jQuery Course completion</h5>
+                                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
                                                     <img class="model-image" src="./photos/jQuery certificate.png" alt="jQuery Certificate">
@@ -508,15 +506,15 @@
                                 <img src="./photos/node js certificate.png" class="card-img-top card-image" alt="Node.js Certificate">
                                 <div class="card-body">
                                     <h5 class="card-title">Codecademy training course</h5>
-                                    <p class="card-text">During my studies I undertook the node.js course on Codecademy, neyond the course I have not used this knowledge but I believe I can recall it if desired</p>
+                                    <p class="card-text">During my studies I undertook the node.js course on Codecademy, beyond the course I have not used this knowledge but I believe I can recall it if desired</p>
                                     <button class="btn button-card" type="button" data-bs-toggle="modal" data-bs-target="#nodeModal1">View Certificate</button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="nodeModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title text-dark" id="exampleModalLabel">Codecademy Node.js Course completion</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <h5 class="modal-title" id="exampleModalLabel">Codecademy Node.js Course completion</h5>
+                                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
                                                     <img class="model-image" src="./photos/node js certificate.png" alt="Node.js Certificate">
@@ -535,14 +533,14 @@
             </div>
             <!--PHP & SQL-->
             <div class="row px-2" id="php">
-                <div class="col-12">
+                <div class="col-12 col-lg-9">
                     <div class="row">
                         <div class="col-12 sectionTitles">
                             <h3>PHP & SQL</h3>
                         </div>
                     </div>
                     <div class="row card-row">
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
@@ -559,8 +557,8 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title text-dark" id="exampleModalLabel">PHP & SQL Code For Form Submission</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <h5 class="modal-title" id="exampleModalLabel">PHP & SQL Code For Form Submission</h5>
+                                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
                                                     <img class="model-image" src="./photos/php code 1.png" alt="php code">
@@ -575,7 +573,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 2-->
                             <div class="card">
                                 <div class="card-header">
@@ -589,33 +587,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <!--Card 3-->
                             <div class="card">
                                 <div class="card-header">
                                     <h4>Codestrips</h4>
                                 </div>
-                                <img src="./photos/codestrips.png" class="card-img-top card-image" alt="in progress">
+                                <img src="./photos/codestrips.png" class="card-img-top card-image" alt="Codestrips SQL application">
                                 <div class="card-body">
                                     <h5 class="card-title">SQL used in an api call</h5>
-                                    <p class="card-text">CodeStrips Codecademy project building an API with SQLite, db, express, and middleware. SQL coding used to create new a link to a database to save new robot layouts created in the browser through buttons</p>
+                                    <p class="card-text">CodeStrips Codecademy project building an API with SQLite, db, express, and middleware. SQL coding used to create a new link to a database to save new robot layouts created in the browser through buttons</p>
                                     <a href="https://github.com/joshsummers4/CodeStrips" class="btn button-code" target="_blank">View code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Python-->
-            <div class="row px-2" id="python">
-                <div class="col-12">
+                <!--Python-->
+                <div class="col-12 col-lg-3" id="python">
                     <div class="row">
                         <div class="col-12 sectionTitles">
                             <h3>Python</h3>
                         </div>
                     </div>
                     <div class="row card-row">
-                        <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <!--Card 1-->
                             <div class="card">
                                 <div class="card-header">
@@ -623,7 +619,7 @@
                                 </div>
                                 <img src="./photos/inprogress.jpg" class="card-img-top card-image" alt="in progress">
                                 <div class="card-body">
-                                    <!--<h5 class="card-title">Special title treatment</h5>-->
+                                    <h5 class="card-title">Data Science Course</h5>
                                     <p class="card-text">I am currently studying the data science career path course on codecademy which is helping to develop my python knowledge that I have previous gained through open university courses. I hope to be able to provide some examples of my Python work soon.</p>
                                     <!--<a href="#" class="btn button-card" target="_blank">View Site</a>-->
                                 </div>
@@ -634,7 +630,6 @@
                 </div>
             </div>
             <!--More-->
-            <!--Automation (ui path logo for image), Reporting, Google Analytics, Database with Access, webscraping-->
             <div class="row px-2" id="more">
                 <div class="col-12">
                     <div class="row">
@@ -652,7 +647,7 @@
                                 <img src="./photos/UiPath.png" class="card-img-top card-image" alt="RPA Automation">
                                 <div class="card-body">
                                     <h5 class="card-title">Process Automation through the use of UI Path</h5>
-                                    <p class="card-text">Uisng Ui Path allowed me to create automated processes for various activities within in the buisness from creating aily sales reports from multiple sites to updating stock levels and responsding to customer queries on a ticketing system.</p>
+                                    <p class="card-text">Using Ui Path allowed me to create automated processes for various activities within in the buisness from creating daily sales reports linking multiple sites to updating stock levels and responding to customer queries on a ticketing system.</p>
                                 </div>
                             </div>
                         </div>
@@ -665,7 +660,7 @@
                                 <img src="./photos/microsoft access.png" class="card-img-top card-image" alt="Microsoft Access Databases">
                                 <div class="card-body">
                                     <h5 class="card-title">Microsoft Access</h5>
-                                    <p class="card-text">As well as beign able to use SQL I am able to create databases and reports using Microsoft Access</p>
+                                    <p class="card-text">As well as being able to use SQL I am able to create databases and reports using Microsoft Access</p>
                                 </div>
                             </div>
                         </div>
@@ -673,12 +668,12 @@
                             <!--Card 3-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>WebScraping</h4>
+                                    <h4>Google Analytics</h4>
                                 </div>
-                                <img src="./photos/octoparse.png" class="card-img-top card-image" alt="Octoparse web scraper">
+                                <img src="./photos/googleanalytics.jpeg" class="card-img-top card-image" alt="google analytics">
                                 <div class="card-body">
-                                    <h5 class="card-title">Octoparse</h5>
-                                    <p class="card-text">Used to pull competitor sales prices to create comparisons</p>
+                                    <h5 class="card-title">Site traffic tracking</h5>
+                                    <p class="card-text">In my previous role I was responsible for setting up the use of google analytics to track site traffic across multiple web stores. This information was be used to plan marketing and strategy based on user behaviour.</p>
                                 </div>
                             </div>
                         </div>
@@ -691,7 +686,7 @@
                                 <img src="./photos/zoho one.png" class="card-img-top card-image" alt="Zoho One">
                                 <div class="card-body">
                                     <h5 class="card-title">Deluge, Zoho Sites, Zoho Analytics, automation in tickets</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text">ZOHO One is an online business tool that includes various software to meet every area of the business, in my role I learnt how to code in its internal language (Deluge) as well as use the sites and analytics applications.</p>
                                 </div>
                             </div>
                         </div>
@@ -699,12 +694,12 @@
                             <!--Card 5-->
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Google Analytics</h4>
+                                    <h4>WebScraping</h4>
                                 </div>
-                                <img src="./photos/googleanalytics.jpeg" class="card-img-top card-image" alt="google analytics">
+                                <img src="./photos/octoparse.png" class="card-img-top card-image" alt="Octoparse web scraper">
                                 <div class="card-body">
-                                    <h5 class="card-title">Site traffic tracking</h5>
-                                    <p class="card-text">In my previous role I was responsible for setting up the use of google analytics to track site traffic across multiple web stores. This information was be used to plan makreting and strategy based on user behaviour.</p>
+                                    <h5 class="card-title">Octoparse</h5>
+                                    <p class="card-text">I was asked to develop a method to compare our prices to our competitors to do this I learnt how to use a webscrapping tool called Octoparse.</p>
                                 </div>
                             </div>
                         </div>
