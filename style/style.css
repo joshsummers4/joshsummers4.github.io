@@ -123,6 +123,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Boxes */
+.skill-row{
+    display: none;
+}
+
+.btn-outline-light{
+    color: #fbfffeff;
+    border-color: #fbfffeff;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+}
+
 .card-row{
     justify-content: center;
 }
