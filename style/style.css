@@ -126,6 +126,18 @@ h1, h2, h3, h4, h5, h6 {
 .skill-row{
     display: none;
 }
+@media only screen and (max-width: 767px) {
+    .btn-group{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    .btn-group > .btn{
+        width: 100%;
+    }
+}
+
 
 .btn-outline-light{
     color: #fbfffeff;
